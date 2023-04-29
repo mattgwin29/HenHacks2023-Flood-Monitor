@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.css";
+//import { LandingPage } from "./Components/LandingPage";
+//import React, { useState } from "react";
+//import { Col, Form, Row } from "react-bootstrap";
 
 function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">UD HenHacks</header>
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
-            </p>
+            <h3>i hope this shows up...</h3>
         </div>
     );
 }
