@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/HenHacks2023-Flood-Monitor/static/css/main.e6c13ad2.css",
-    "main.js": "/HenHacks2023-Flood-Monitor/static/js/main.72737398.js",
+    "main.css": "/HenHacks2023-Flood-Monitor/static/css/main.39f589df.css",
+    "main.js": "/HenHacks2023-Flood-Monitor/static/js/main.b1b98ee9.js",
     "static/js/787.b6cbf58f.chunk.js": "/HenHacks2023-Flood-Monitor/static/js/787.b6cbf58f.chunk.js",
     "index.html": "/HenHacks2023-Flood-Monitor/index.html",
-    "main.e6c13ad2.css.map": "/HenHacks2023-Flood-Monitor/static/css/main.e6c13ad2.css.map",
-    "main.72737398.js.map": "/HenHacks2023-Flood-Monitor/static/js/main.72737398.js.map",
+    "main.39f589df.css.map": "/HenHacks2023-Flood-Monitor/static/css/main.39f589df.css.map",
+    "main.b1b98ee9.js.map": "/HenHacks2023-Flood-Monitor/static/js/main.b1b98ee9.js.map",
     "787.b6cbf58f.chunk.js.map": "/HenHacks2023-Flood-Monitor/static/js/787.b6cbf58f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.72737398.js"
+    "static/css/main.39f589df.css",
+    "static/js/main.b1b98ee9.js"
   ]
 }
