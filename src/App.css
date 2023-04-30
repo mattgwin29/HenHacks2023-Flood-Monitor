@@ -63,8 +63,13 @@
     overflow: hidden;
 }
 
-.navBar {
-    grid-column: span 2;
+.pageTitle {
+    height: 100%;
+    color: black;
+}
+
+.zipBox {
+    height: 100%;
 }
 
 .mainContent {

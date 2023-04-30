@@ -12,7 +12,10 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <div className="grid">
-                <div className="navBar">
+                <div className="pageTitle">
+                    <h2>Flood Watch</h2>
+                </div>
+                <div className="zipBox">
                     <LandingPage defaultZip="19717"></LandingPage>
                 </div>
                 <div className="mainContent">
