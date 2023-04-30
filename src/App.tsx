@@ -3,10 +3,7 @@ import "./App.css";
 import { LandingPage } from "./Components/LandingPage";
 import { TestMap } from "./Components/TestMap";
 import "leaflet/dist/leaflet.css";
-import {
-    TwitterTimelineEmbed,
-    TwitterHashtagButton
-} from "react-twitter-embed";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 function App(): JSX.Element {
     return (
