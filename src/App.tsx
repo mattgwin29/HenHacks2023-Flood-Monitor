@@ -12,7 +12,9 @@ function App(): JSX.Element {
                 <div className="ZipBar">
                     <LandingPage defaultZip="19717"></LandingPage>
                 </div>
-                <TestMap></TestMap>
+                <div className="HEATMAP">
+                    <TestMap></TestMap>
+                </div>
             </header>
         </div>
     );
