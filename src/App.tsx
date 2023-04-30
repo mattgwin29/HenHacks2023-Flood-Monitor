@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { ZipBar } from "./Components/ZipBar";
 import { TestMap } from "./Components/TestMap";
-import { SetHeatMap } from "./Components/HeatLayer";
+//import { SetHeatMap } from "./Components/HeatLayer";
 import "leaflet/dist/leaflet.css";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { FloodPopUpZip } from "./Components/FloodPopUpZip";
