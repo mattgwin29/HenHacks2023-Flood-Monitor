@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { LandingPage } from "./Components/LandingPage";
 import { TestMap } from "./Components/TestMap";
+import { SetHeatMap } from "./Components/HeatLayer";
 import "leaflet/dist/leaflet.css";
 import {
     TwitterTimelineEmbed,
@@ -33,5 +34,4 @@ function App(): JSX.Element {
         </div>
     );
 }
-
 export default App;
