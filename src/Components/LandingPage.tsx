@@ -30,7 +30,7 @@ export function LandingPage({
                     ></Form.Control>
                 </Col>
             </Form.Group>
-            <div>Your answer: {zip} </div>
+            <div>Default Zip Code: {defaultZip} </div>
         </div>
     );
 }
