@@ -6,13 +6,23 @@ import "leaflet.heat";
 //import { JsxElement } from "typescript";
 //import { HeatLayer } from "leaflet.heat";
 
-export function HeatMap(): JSX.Element {
+export function HeatMap({
+    heatLocation
+}: {
+    heatLocation: L.HeatLatLngTuple[];
+}): JSX.Element {
+    const [points, setPoints] = useState<L.HeatLatLngTuple[]>(heatLocation);
+
+    function updatePoints() {
+        setPoints([...points]);
+    }
+
     const map = useMap();
     useEffect(() => {
-        const points: L.HeatLatLngTuple[] = [
+        /*const points: L.HeatLatLngTuple[] = [
             [-37.87, 175.475, 7],
             [-30, 90, 10]
-        ];
+        ];*/
 
         //L.heatLayer(test, { gradient: "Orange" }).addTo(map);
         L.heatLayer(points, {
@@ -27,8 +37,22 @@ export function HeatMap(): JSX.Element {
     return <div>Test</div>;
 }
 
-export function TestMap(): JSX.Element {
+export function TestMap({
+    heatLocation
+}: {
+    heatLocation: L.HeatLatLngTuple[];
+}): JSX.Element {
+    console.log("setting a new testmap!");
     const position: [number, number] = [51.505, -0.09];
+
+    const [HeatMapState, SetHeatMapState] = useState<JSX.Element>(
+        <HeatMap heatLocation={[]}></HeatMap>
+    );
+
+    function updateHeatMap() {
+        SetHeatMapState(HeatMap({ heatLocation }));
+    }
+
     return (
         <MapContainer
             id={"heat"}
@@ -36,20 +60,11 @@ export function TestMap(): JSX.Element {
             zoom={13}
             scrollWheelZoom={false}
         >
-            {/*<HeatmapLayer
-                fitBoundsOnLoad
-                fitBoundsOnUpdate
-                points={addressPoints}
-                longitudeExtractor={(m) => m[1]}
-                latitudeExtractor={(m) => m[0]}
-                intensityExtractor={(m) => parseFloat(m[2])}
-    />*/}
-
             <TileLayer
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <HeatMap></HeatMap>
+            {HeatMapState}
             <Marker position={position}>
                 <Popup>
                     Current Location <br />
