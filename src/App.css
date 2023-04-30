@@ -35,7 +35,7 @@
         transform: rotate(360deg);
     }
 }
-
+/*
 .ZipBar {
     font-size: calc(3px + 2vmin);
     text-align: right;
@@ -52,4 +52,69 @@
     column-width: 100px;
     align-items: right;
     text-align: right;
+}
+
+*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 62% 38%;
+    grid-template-rows: 7vh 93vh;
+    overflow: hidden;
+}
+
+.pageTitle {
+    height: 100%;
+    color: black;
+}
+
+.zipBox {
+    height: 100%;
+}
+
+.mainContent {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 75%;
+}
+
+.floodBox {
+    height: 100%;
+}
+
+.heatMap {
+    height: 100%;
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+}
+
+.secondaryContent {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.weatherBox {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.twitterBox {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+TwitterTimelineEmbed {
+    height: 100%;
+}
+
+.tbdBox {
+    height: 100%;
+    /*width: 100%;*/
 }
