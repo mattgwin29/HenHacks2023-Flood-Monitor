@@ -21,12 +21,11 @@ export function ZipBar({ defaultZip }: { defaultZip: string }): JSX.Element {
                 <Col>
                     <Form.Control
                         type="text"
-                        value={zip}
+                        value={defaultZip}
                         onChange={updateZip}
                     ></Form.Control>
                 </Col>
             </Form.Group>
-            <div>Default Zip Code: {defaultZip} </div>
         </div>
     );
 }

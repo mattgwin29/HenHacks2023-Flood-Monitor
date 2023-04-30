@@ -35,25 +35,6 @@
         transform: rotate(360deg);
     }
 }
-/*
-.ZipBar {
-    font-size: calc(3px + 2vmin);
-    text-align: right;
-    align-items: right;
-    float: right;
-}
-
-.leaflet-container {
-    width: 100wh;
-    height: 100vh;
-}
-.Twitter-embedding {
-    width: 50%;
-    align-items: right;
-    text-align: right;
-}
-
-*/
 
 .grid {
     display: grid;
@@ -64,11 +45,12 @@
 
 .pageTitle {
     height: 100%;
-    color: black;
+    background-color: #282c34;
 }
 
 .zipBox {
     height: 100%;
+    background-color: #282c34;
 }
 
 .mainContent {
