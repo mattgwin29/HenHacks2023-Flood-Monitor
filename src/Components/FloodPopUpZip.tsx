@@ -24,6 +24,7 @@ export function FloodPopUpZip() {
             <Button variant="outlined" onClick={handleClickOpen}>
                 Are you being impacted by a flood right now?
             </Button>
+            <h3 className="mapTitle">Tracking the Flooded Regions</h3>
             <Dialog open={open} onClose={handleClose}>
                 <DialogTitle>Let us know</DialogTitle>
                 <DialogContent>

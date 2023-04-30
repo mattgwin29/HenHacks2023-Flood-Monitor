@@ -6,7 +6,7 @@ export function ZipBar({ defaultZip }: { defaultZip: string }): JSX.Element {
         HTMLTextAreaElement | HTMLInputElement | HTMLSelectElement
     >;
 
-    const [zip, setZip] = useState<string>("");
+    const [zip, setZip] = useState<string>(defaultZip);
 
     function updateZip(event: ChangeEvent) {
         setZip(event.target.value);
@@ -26,7 +26,6 @@ export function ZipBar({ defaultZip }: { defaultZip: string }): JSX.Element {
                     ></Form.Control>
                 </Col>
             </Form.Group>
-            <div>Default Zip Code: {defaultZip} </div>
         </div>
     );
 }
