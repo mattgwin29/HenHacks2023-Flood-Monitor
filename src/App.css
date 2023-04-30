@@ -43,6 +43,10 @@
     float: right;
 }
 
+.leaflet-container {
+    width: 100wh;
+    height: 100vh;
+}
 .Twitter-embedding {
     width: 50%;
     column-width: 100px;

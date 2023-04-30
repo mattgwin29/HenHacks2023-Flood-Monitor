@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import { LandingPage } from "./Components/LandingPage";
+import { TestMap } from "./Components/TestMap";
+import "leaflet/dist/leaflet.css";
 import {
     TwitterTimelineEmbed,
     TwitterHashtagButton
@@ -13,6 +15,9 @@ function App(): JSX.Element {
                 UD HenHacks- FLOOD WATCH
                 <div className="ZipBar">
                     <LandingPage defaultZip="19717"></LandingPage>
+                </div>
+                <div className="HEATMAP">
+                    <TestMap></TestMap>
                 </div>
             </header>
             <header className="Twitter-embedding">
