@@ -18,7 +18,6 @@ export function LandingPage({
 
     return (
         <div>
-            <h3>Zip</h3>
             <Form.Group controlId="formSearchZip" as={Row}>
                 <Form.Label column sm={0}>
                     Enter Zip Code
@@ -31,7 +30,7 @@ export function LandingPage({
                     ></Form.Control>
                 </Col>
             </Form.Group>
-            <div>Your answer: {defaultZip}</div>
+            <div>Your answer: {zip} </div>
         </div>
     );
 }
