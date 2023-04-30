@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import { ZipBar } from "./Components/ZipBar";
+import { TestMap } from "./Components/TestMap";
+import "leaflet/dist/leaflet.css";
 import {
     TwitterTimelineEmbed,
     TwitterHashtagButton
@@ -16,6 +18,9 @@ function App(): JSX.Element {
                 UD HenHacks- FLOOD WATCH
                 <div className="ZipBar">
                     <ZipBar defaultZip="19717"></ZipBar>
+                </div>
+                <div className="HEATMAP">
+                    <TestMap></TestMap>
                 </div>
             </header>
             <header className="Flooding-popup">
