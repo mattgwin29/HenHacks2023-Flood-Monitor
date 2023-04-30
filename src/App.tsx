@@ -3,6 +3,10 @@ import "./App.css";
 import { LandingPage } from "./Components/LandingPage";
 import { TestMap } from "./Components/TestMap";
 import "leaflet/dist/leaflet.css";
+import {
+    TwitterTimelineEmbed,
+    TwitterHashtagButton
+} from "react-twitter-embed";
 
 function App(): JSX.Element {
     return (
@@ -15,6 +19,16 @@ function App(): JSX.Element {
                 <div className="HEATMAP">
                     <TestMap></TestMap>
                 </div>
+            </header>
+            <header className="Twitter-embedding">
+                <TwitterTimelineEmbed
+                    sourceType="profile"
+                    screenName="DelawareEMA"
+                    options={{ height: 400 }}
+                />
+                <TwitterHashtagButton
+                    tag={"MyAnklesAreInWaterRn"}
+                ></TwitterHashtagButton>
             </header>
         </div>
     );
