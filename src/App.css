@@ -1,4 +1,5 @@
 .App {
+    color: white;
 }
 
 .App-logo {
@@ -40,4 +41,11 @@
     text-align: right;
     align-items: right;
     float: right;
+}
+
+.Twitter-embedding {
+    width: 50%;
+    column-width: 100px;
+    align-items: right;
+    text-align: right;
 }
