@@ -43,6 +43,10 @@
     overflow: hidden;
 }
 
+.grid * {
+    padding: 4pt;
+}
+
 .pageTitle {
     height: 100%;
     background-color: #3375ab;
@@ -57,7 +61,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 75%;
+    grid-template-rows: 15% 85%;
 }
 
 .floodBox {
@@ -76,7 +80,7 @@
 .secondaryContent {
     height: 100%;
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 100%;
 }
 
 .weatherBox {
@@ -104,4 +108,15 @@ TwitterTimelineEmbed {
     height: 100px;
     width: fit-content;
     background-color: red;
+}
+
+.titleImg {
+    width: 80%;
+}
+
+.mapTitle {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    color: black;
 }

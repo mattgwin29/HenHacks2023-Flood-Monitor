@@ -6,6 +6,7 @@ import "leaflet/dist/leaflet.css";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { FloodPopUpZip } from "./Components/FloodPopUpZip";
 import { FloodPopUp } from "./Components/FloodPopUp";
+import logo from "./floodwatch.jpg";
 
 function App(): JSX.Element {
     return (
@@ -13,7 +14,7 @@ function App(): JSX.Element {
             <FloodPopUp></FloodPopUp>
             <div className="grid">
                 <div className="pageTitle">
-                    <h2>Flood Watch</h2>
+                    <img src={logo} className="titleImg" />
                 </div>
                 <div className="zipBox">
                     <ZipBar defaultZip="19717"></ZipBar>
@@ -27,7 +28,6 @@ function App(): JSX.Element {
                     </div>
                 </div>
                 <div className="secondaryContent">
-                    <div className="weatherBox"></div>
                     <div className="twitterBox">
                         <TwitterTimelineEmbed
                             sourceType="profile"
