@@ -10,8 +10,16 @@ export function HeatMap(): JSX.Element {
     const map = useMap();
     useEffect(() => {
         const points: L.HeatLatLngTuple[] = [
-            [-37.87, 175.475, 7],
-            [-30, 90, 10]
+            [39.714812, -75.760116, 0],
+            [39.703876, -75.755223, 0],
+            [39.703462, -75.755074, 0],
+            [39.704084, -75.756489, 0],
+            [39.705677, -75.757377, 0],
+            [39.683155, -75.751113, 0],
+            [39.681729, -75.753594, 0],
+            [39.682061, -75.757036, 0],
+            [39.683069, -75.756228, 0],
+            [39.681782, -75.752158, 0]
         ];
 
         //L.heatLayer(test, { gradient: "Orange" }).addTo(map);
@@ -28,11 +36,11 @@ export function HeatMap(): JSX.Element {
 }
 
 export function TestMap(): JSX.Element {
-    const position: [number, number] = [51.505, -0.09];
+    const position: [number, number] = [39.685076, -75.754426];
     return (
         <MapContainer
             id={"heat"}
-            center={[51.505, -0.09]}
+            center={[39.685076, -75.754426]}
             zoom={13}
             scrollWheelZoom={false}
         >
