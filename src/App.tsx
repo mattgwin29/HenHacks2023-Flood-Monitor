@@ -11,25 +11,26 @@ import {
 function App(): JSX.Element {
     return (
         <div className="App">
-            <header className="App-header">
-                UD HenHacks- FLOOD WATCH
-                <div className="ZipBar">
+            <div className="grid">
+                <div className="navBar">
                     <LandingPage defaultZip="19717"></LandingPage>
                 </div>
-                <div className="HEATMAP">
-                    <TestMap></TestMap>
+                <div className="mainContent">
+                    <div className="floodBox"></div>
+                    <div className="heatMap">
+                        <TestMap></TestMap>
+                    </div>
                 </div>
-            </header>
-            <header className="Twitter-embedding">
-                <TwitterTimelineEmbed
-                    sourceType="profile"
-                    screenName="DelawareEMA"
-                    options={{ height: 400 }}
-                />
-                <TwitterHashtagButton
-                    tag={"MyAnklesAreInWaterRn"}
-                ></TwitterHashtagButton>
-            </header>
+                <div className="secondaryContent">
+                    <div className="weatherBox"></div>
+                    <div className="twitterBox">
+                        <TwitterTimelineEmbed
+                            sourceType="profile"
+                            screenName="DelawareEMA"
+                        />
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
