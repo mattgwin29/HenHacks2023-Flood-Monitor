@@ -45,7 +45,12 @@
 
 .Twitter-embedding {
     width: 50%;
-    column-width: 100px;
     align-items: right;
     text-align: right;
+}
+
+.FloodPopup {
+    height: 100px;
+    width: fit-content;
+    background-color: red;
 }

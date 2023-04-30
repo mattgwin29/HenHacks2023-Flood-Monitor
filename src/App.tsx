@@ -1,19 +1,25 @@
 import React from "react";
 import "./App.css";
-import { LandingPage } from "./Components/LandingPage";
+import { ZipBar } from "./Components/ZipBar";
 import {
     TwitterTimelineEmbed,
     TwitterHashtagButton
 } from "react-twitter-embed";
+import { FloodPopUpZip } from "./Components/FloodPopUpZip";
+import { FloodPopUp } from "./Components/FloodPopUp";
 
 function App(): JSX.Element {
     return (
         <div className="App">
+            <FloodPopUp></FloodPopUp>
             <header className="App-header">
                 UD HenHacks- FLOOD WATCH
                 <div className="ZipBar">
-                    <LandingPage defaultZip="19717"></LandingPage>
+                    <ZipBar defaultZip="19717"></ZipBar>
                 </div>
+            </header>
+            <header className="Flooding-popup">
+                <FloodPopUpZip></FloodPopUpZip>
             </header>
             <header className="Twitter-embedding">
                 <TwitterTimelineEmbed

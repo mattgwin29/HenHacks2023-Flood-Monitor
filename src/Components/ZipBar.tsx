@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { Col, Form, Row } from "react-bootstrap";
 
-export function LandingPage({
-    defaultZip
-}: {
-    defaultZip: string;
-}): JSX.Element {
+export function ZipBar({ defaultZip }: { defaultZip: string }): JSX.Element {
     type ChangeEvent = React.ChangeEvent<
         HTMLTextAreaElement | HTMLInputElement | HTMLSelectElement
     >;
